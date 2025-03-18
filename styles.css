@@ -1,0 +1,248 @@
+*, 
+::before, 
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-style: tahoma;
+    --font-color: whitesmoke;
+    --border: 1px solid gray;
+}
+
+body {
+    background-image: linear-gradient(25deg, rgb(44, 41, 179), rgb(45, 2, 63));
+    background-size: cover;
+    margin: .5rem auto auto auto;
+    max-width: 800px;
+    border: var(--border);
+    border-radius: 5px;
+    padding: 1rem;
+    height: 100vh;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: var(--font-style);
+    color: var(--font-color);
+    text-align: center;
+}
+
+/* Date and time */
+header > p {
+    position: relative;
+    display: block;
+    font-family: var(--font-style);
+    font-size: 1em;
+    color: var(--font-color);
+    text-align: center;
+    margin: auto;
+}
+
+#time {
+    margin: 0.5rem auto 1.5rem auto;
+}
+
+.form-container {
+    margin-bottom: 1.5rem;
+}
+
+/* Search Field */
+#search-task-input {
+    display: relative;
+    float: left;
+    margin: auto;
+    height: 35px;
+    width: 200px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+}
+
+/* Delete All Button */
+.delete-all {
+    position: relative;
+    float: right;
+    margin-top: 0;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    background-color: red;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    &:hover {
+        background-color: rgb(247, 30, 14);
+    }
+    &:active {
+        background-color: gray;
+    }
+}
+
+/* Add Todo Button */
+#add-todo-btn {
+    display: inline-block;
+    padding: 0;
+    margin-top: 30px;
+    width: 15%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: none;
+    height: 35px;
+    font-size: 2em;
+    justify-content: center;
+    background-color: greenyellow;
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(22, 218, 15);
+    }
+    &:active {
+        background-color: rgb(28, 248, 230);
+    }
+}
+
+#todo-input {
+    display: relative;
+    border: none;
+    float: left;
+    width: 85%;
+    height: 35px;
+    font-size: 1.5em;
+    text-align: left;
+    padding-left: 1rem;
+    margin-top: 30px;
+    outline: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.todo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding: 0.5rem;
+    background-color: hsla(0, 0%, 95%, 0.2);
+    margin-top: 5px;
+    color: var(--font-color);
+    font-family: var(--font-style);
+    border: var(--border);
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gray;
+    &:hover {
+        background-color: hsla(0, 0%, 95%, 0.5);
+        transition: 0.5s;
+    }
+}
+
+.check-btn {
+    margin-right: 10px;
+    border: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    color: var(--font-color);
+    font-style: italic;
+}
+
+.todo-item {
+    list-style: none;
+    width: 680px;
+    font-size: 1.25em;
+    padding-bottom: 5px;
+}
+
+li > input[type="text"] {
+    width: 680px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: yellow;
+}
+
+.delete-btn {
+    display: flex;
+    position: relative;
+    padding: .4rem;
+    border: none;
+    max-width: 40px;
+    background-color: transparent;
+    color: red;
+    font-weight: bold;
+    &:hover {
+        background-color: black;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
+
+.edit-btn {
+    display: flex;
+    position: relative;
+    float: right;
+    padding: .4rem;
+    border: none;
+    max-width: 40px;
+    background-color: transparent;
+    color: red;
+    font-weight: bold;
+    &:hover {
+        background-color: greenyellow;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    &:active {
+        background-color: var(--border);
+    }
+}
+
+.no-task {
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    body {
+        margin: 5%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    body {
+        margin: 5%;
+    }
+
+    header {
+        display: block;
+        font-size: 0.8em;
+        margin-bottom: 20px;
+    }
+
+    .delete-all {
+        width: 100%;
+        margin-top: 10px;
+        transition: 0.5s;
+    }
+
+    #search-task-input {
+        margin-top: 20px;
+        width: 100%;
+        transition: 0.5s;
+    }   
+}
+
+
+
+
+
+

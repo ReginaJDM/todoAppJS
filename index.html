@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="To Do App Project">
+  <meta name="keywords" content="HTML, CSS, JavaScript, To Do App">
+  <link rel="stylesheet" href="styles.css" />
+  <title>To Do App Project</title>
+</head>
+<body>
+  <header>
+    <h1>My To Do App Project</h1>
+    <p id="date"></p>
+    <p id="time"></p>
+  </header>   
+  <form id="todo-form" class="form-container">
+    <input type="search" name="search-task" id="search-task-input" placeholder="Search task...">
+    <button class="delete-all" aria-label="delete-all">Delete All</button>
+    <input type="text" name="todo-task" id="todo-input" placeholder="Enter new task...">
+    <button id="add-todo-btn" aria-label="add-todo-btn">+</button>
+  </form>
+    <div class="todo-container">
+      <ul class="todo-list" id="todo-list">  
+      </ul>
+    </div> 
+  <script src="test.js"></script>
+</body>
+</html>
