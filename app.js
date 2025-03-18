@@ -8,9 +8,6 @@ const checkBox = document.querySelector(".check-btn");
 const delAllButton = document.querySelector(".delete-all");
 const searchInput = document.getElementById("search-task-input");
 
-
-
-
 // Event Listeners
 document.addEventListener("DOMContentLoaded", getTodos);
 todoButton.addEventListener("click", addToDo);
